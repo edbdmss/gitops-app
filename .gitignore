@@ -25,6 +25,31 @@ replay_pid*
 
 # intellij
 .idea/
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/resources/
+!**/src/test/resources/
 
 # properties
 *.properties
+
+# macos
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon_
+._*
+.Spotlight-V100
+.Trashes
+screenshot*.png
+
+
+# springBoot
+/HELP.md
+.mvnum/
+wrapper/
+.mvn/
+mvnw
+mvnw.cmd
