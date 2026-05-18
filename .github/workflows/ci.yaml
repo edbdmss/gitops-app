@@ -9,7 +9,7 @@ on:
 env:
   DOCKERHUB_IMAGE: edbdmss/gitops-app
   CONFIG_REPO: edbdmss/gitops-config
-  CONFIG_REPO_PATH: apps/gitops-app/overlays
+  CONFIG_REPO_PATH: apps/spring-boot/overlays
 
 permissions:
   contents: read
@@ -81,7 +81,7 @@ jobs:
         run: |
           cd config-repo/${{ env.CONFIG_REPO_PATH }}/dev
           kustomize edit set image \
-            nginx=your-dockerhub-username/gitops-app:$IMAGE_TAG
+            edbdmss/gitops-app=edbdmss/gitops-app:$IMAGE_TAG
 
       - name: Config Repo 커밋 및 Push
         env:
