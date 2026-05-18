@@ -30,8 +30,10 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
           cache: 'maven'
+          cache-dependency-path: './ops-app/pom.xml'
 
       - name: 테스트 실행
+        working-directory: ./ops-app
         run: mvn test -q
 
       - name: 이미지 태그 생성
