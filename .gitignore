@@ -49,7 +49,7 @@ screenshot*.png
 
 
 # springBoot
-/HELP.md
+HELP.md
 .mvnum/
 wrapper/
 .mvn/
