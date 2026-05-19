@@ -34,6 +34,7 @@ out/
 
 # properties
 *.properties
+application.yml
 
 # macos
 .DS_Store
