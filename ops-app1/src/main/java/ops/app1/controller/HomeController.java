@@ -13,9 +13,9 @@ public class HomeController {
 
     @GetMapping("/")
     public String home(Model model) {
-        model.addAttribute("appName", "ops-app1");
+        model.addAttribute("appName", "ops-app2");
         model.addAttribute("profile", profile);
-        model.addAttribute("message", "Hello from ops-app1 (" + profile + ")");
+        model.addAttribute("message", "Hello from ops-app2 (" + profile + ")");
         return "home";
     }
 }
